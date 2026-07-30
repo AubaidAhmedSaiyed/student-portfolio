@@ -1,0 +1,31 @@
+.tip-row {
+  max-width: 900px;
+  margin: 1.5rem auto 0;
+  padding: 0 1rem;
+}
+
+.tip-btn {
+  background: linear-gradient(135deg, #4f46e5, #22d3ee);
+  color: #fff;
+  border: none;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(34, 211, 238, 0.22);
+}
+
+.tip-btn:hover {
+  transform: translateY(-1px);
+}
+
+.tip-text {
+  margin-top: 0.7rem;
+  font-size: 0.95rem;
+  color: #dce7ff;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+}

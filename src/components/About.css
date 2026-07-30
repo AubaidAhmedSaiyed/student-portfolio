@@ -1,0 +1,39 @@
+.about {
+  max-width: 900px;
+  margin: 2.4rem auto;
+  padding: 1.4rem 1.45rem 1.5rem;
+  line-height: 1.8;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.16);
+}
+
+.about h2 {
+  margin: 0 0 0.75rem;
+  border-left: 3px solid #9bc0ff;
+  padding-left: 0.7rem;
+}
+
+.about p {
+  color: #dce7ff;
+  margin: 0 0 0.8rem;
+}
+
+.highlight-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.highlight-list li {
+  padding: 0.55rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e7faff;
+  font-size: 0.9rem;
+}

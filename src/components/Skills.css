@@ -1,0 +1,43 @@
+.skills {
+  max-width: 900px;
+  margin: 2.2rem auto 2.6rem;
+  padding: 0 1rem;
+}
+
+.skills h2 {
+  margin-bottom: 1rem;
+  border-left: 3px solid #9bc0ff;
+  padding-left: 0.7rem;
+}
+
+.skill-group {
+  margin-bottom: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.skill-group h3 {
+  margin: 0 0 0.7rem;
+  font-size: 1rem;
+  color: #9bc0ff;
+}
+
+.skill-group ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-group li {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.42rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  color: #ebf6ff;
+}

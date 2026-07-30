@@ -1,0 +1,49 @@
+.contact {
+  max-width: 680px;
+  margin: 2rem auto 3rem;
+  padding: 1.3rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.16);
+}
+
+.contact h2 {
+  border-left: 3px solid #9bc0ff;
+  padding-left: 0.7rem;
+}
+
+.contact label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #cfe8ff;
+}
+
+.contact textarea {
+  width: 100%;
+  margin-top: 0.45rem;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(6, 10, 22, 0.4);
+  color: #f4f7ff;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+}
+
+.char-count {
+  font-size: 0.8rem;
+  color: #8da2c5;
+  margin-top: 0.35rem;
+}
+
+.preview {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  border-radius: 12px;
+}
