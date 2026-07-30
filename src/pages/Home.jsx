@@ -22,7 +22,7 @@ function Home() {
 
   return (
     <div>
-      <Header name="Your Name" themeColor="#4f46e5" />
+      <Header name="Aubaid Ahmed" themeColor="#4f46e5" />
 
       <div className="tip-row">
         <button className="tip-btn" onClick={() => setShowTip((prev) => !prev)}>
