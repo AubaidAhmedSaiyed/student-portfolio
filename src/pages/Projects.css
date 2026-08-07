@@ -1,13 +1,36 @@
 .projects {
-  max-width: 1000px;
+  max-width: 1080px;
   margin: 2.2rem auto 3rem;
   padding: 0 1rem;
 }
 
 .projects h2 {
   margin-bottom: 1rem;
-  border-left: 3px solid #9bc0ff;
+  border-left: 3px solid #60a5fa;
   padding-left: 0.7rem;
+  font-size: clamp(1.3rem, 2.1vw, 1.6rem);
+}
+
+.projects-toolbar {
+  margin: 1rem 0 1.2rem;
+}
+
+.projects-toolbar input {
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.72);
+  color: #f8fafc;
+  padding: 0.8rem 1rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: border-color 250ms ease, box-shadow 250ms ease;
+}
+
+.projects-toolbar input:focus {
+  outline: none;
+  border-color: rgba(96, 165, 250, 0.4);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
 }
 
 .project-grid {
@@ -19,31 +42,105 @@
 
 .project-card {
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 18px;
-  padding: 1rem 1.2rem;
-  background: rgba(255, 255, 255, 0.04);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  border-radius: 20px;
+  padding: 1.2rem 1.25rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.03));
+  box-shadow: 0 16px 38px rgba(2, 8, 23, 0.2);
+  transition: transform 250ms ease, border-color 250ms ease, box-shadow 250ms ease;
 }
 
 .project-card:hover {
-  transform: translateY(-2px);
-  border-color: rgba(155, 192, 255, 0.35);
+  transform: translateY(-3px) scale(1.01);
+  border-color: rgba(96, 165, 250, 0.28);
+  box-shadow: 0 20px 45px rgba(2, 8, 23, 0.25);
 }
 
 .project-card h3 {
   margin: 0 0 0.45rem;
-  color: #7fd0ff;
+  color: #93c5fd;
 }
 
 .stack {
-  font-size: 0.82rem;
-  color: #9fb3d6;
-  margin-bottom: 0.7rem;
+  font-size: 0.84rem;
+  color: #94a3b8;
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
 }
 
 .project-card p {
-  color: #dce7ff;
+  color: #e2e8f0;
   line-height: 1.7;
   margin: 0;
+}
+
+.repo-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+  font-size: 0.95rem;
+}
+
+.repo-meta a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.repo-meta a:hover {
+  text-decoration: underline;
+}
+
+.spinner {
+  width: 42px;
+  height: 42px;
+  border: 4px solid rgba(255, 255, 255, 0.12);
+  border-top-color: #60a5fa;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+  margin: 1.1rem 0;
+}
+
+.error-state,
+.empty-state {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.retry-button {
+  margin-top: 0.7rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 0.95rem;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: #f8fafc;
+  cursor: pointer;
+  transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.retry-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.2);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
