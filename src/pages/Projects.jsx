@@ -68,6 +68,8 @@ function Projects() {
         />
       </div>
 
+    {' '}
+    
       {loading ? (
         <Spinner />
       ) : error ? (

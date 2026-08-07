@@ -5,9 +5,9 @@ function Footer() {
   return (
     <footer className="footer">
       <p>
-        <a href="mailto:you@example.com">you@example.com</a> ·{' '}
-        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a> ·{' '}
-        <a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:you@example.com">you@example.com</a>{' '}
+        <a href="https://github.com/">GitHub</a> {''}
+        <a href="https://linkedin.com/" >LinkedIn</a>
       </p>
       <p>&copy; {year} — Built with React &amp; Vite</p>
     </footer>

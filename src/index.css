@@ -11,20 +11,21 @@ body {
   font-family: Inter, 'Segoe UI', Roboto, system-ui, sans-serif;
   color: #f8fafc;
   background:
-    radial-gradient(circle at 12% 10%, rgba(37, 99, 235, 0.24), transparent 28%),
-    radial-gradient(circle at 90% 0%, rgba(96, 165, 250, 0.16), transparent 20%),
-    linear-gradient(135deg, #0b1120 0%, #111827 45%, #020617 100%);
+    radial-gradient(circle at 12% 10%, rgba(255, 255, 255, 0.04), transparent 28%),
+    radial-gradient(circle at 90% 0%, rgba(255, 255, 255, 0.03), transparent 20%),
+    linear-gradient(135deg, #000000 0%, #0a0a0a 45%, #111111 100%);
   min-height: 100vh;
 }
 
+
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
   background-size: 36px 36px;
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent 100%);
 }
@@ -40,16 +41,17 @@ h2,
 h3 {
   font-weight: 700;
   letter-spacing: -0.025em;
+  color: #ffffff;
 }
 
 a {
-  color: #60a5fa;
+  color: #e5e7eb;
   text-decoration: none;
   transition: color 250ms ease, opacity 250ms ease;
 }
 
 a:hover {
-  color: #dbeafe;
+  color: #ffffff;
 }
 
 section {
